@@ -1,7 +1,10 @@
 const mongoose = require("mongoose")
 const productShcema = mongoose.Schema({
+    type: String,
     name: String,
     price: Number, 
+    priceType: Number,
+    warranty: String,
     youtubeReview: String,
     productWebsite: String, 
     description: String
