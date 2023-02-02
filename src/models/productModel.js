@@ -10,6 +10,3 @@ const productShcema = mongoose.Schema({
 const model = mongoose.model("Product", productShcema)
 
 module.exports = model;
-
-/* ,
-    otherPhotos: Array */
