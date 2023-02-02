@@ -40,5 +40,3 @@ module.exports = {
     getSingle,
     deleteProduct
 }
-
-//, youtubeReview, productWebsite, description
