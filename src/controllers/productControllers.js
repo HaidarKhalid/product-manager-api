@@ -2,7 +2,7 @@ const ProductModel = require("../models/productModel.js")
 
 const createProduct = async (req, res) => {
     const {name, price} = req.body;
-    const newProduct = await ProductModel.create({name, price})
+    const newProduct = await ProductModel.create({name, price, youtubeReview, productWebsite, description})
     res.json(newProduct)
 }
 
@@ -15,7 +15,7 @@ const getAllProducts = async (req, res) => {
 const updateProduct = async (req, res) => {
     const {productId} = req.params
     const {name, price} = req.body
-    const updatedProduct = await ProductModel.findByIdAndUpdate(productId, {name, price}, {new: true})
+    const updatedProduct = await ProductModel.findByIdAndUpdate(productId, {name, price, youtubeReview, productWebsite, description}, {new: true})
     res.json(updatedProduct)
 }
 
@@ -41,4 +41,4 @@ module.exports = {
     deleteProduct
 }
 
-//, youtubeReview, productWebsite, otherPhotos
+//, youtubeReview, productWebsite, description
