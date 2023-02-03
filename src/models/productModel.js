@@ -7,7 +7,8 @@ const productShcema = mongoose.Schema({
     warranty: String,
     youtubeReview: String,
     productWebsite: String, 
-    description: String
+    description: String,
+    mainImg: String
 });
 
 const model = mongoose.model("Product", productShcema)
