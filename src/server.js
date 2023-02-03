@@ -11,7 +11,3 @@ app.use("/products", productRouter)
 
 app.listen(8000,()=> console.log("listening at port 8000"))
 
-
-// zAaQtRXht48rl56d
-
-// &!hvMhQwN8$@2M6fwFUD
