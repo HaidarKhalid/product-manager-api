@@ -3,6 +3,7 @@ const productShcema = mongoose.Schema({
     mainImg: String,
     type: String,
     name: String,
+    productStatus: String,
     price: Number, 
     priceType: Number,
     warranty: String,
