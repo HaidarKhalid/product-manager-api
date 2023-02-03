@@ -9,7 +9,6 @@ const productShcema = mongoose.Schema({
     youtubeReview: String,
     productWebsite: String, 
     description: String,
-    mainImg: String
 });
 
 const model = mongoose.model("Product", productShcema)
